@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum | Stories Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: var(--bg-secondary);">
+    <header>
+        <div class="logo"><img src="assets/images/logo_stories_hub.jpeg" alt="Stories Hub"></div>
+        <div class="header-user">
+            <span>Author Account: chaitanya_sh</span>
+        </div>
+    </header>
+
+    <nav class="sub-nav">
+        <a href="index.html">Bookshelf</a>
+        <a href="community-forum.html" class="active">Community</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="help-center.html">Help</a>
+        <a href="university.html">University</a>
+    </nav>
+
+
+    <div class="container" style="max-width: 1200px; margin: 2rem auto;">
+        <div class="dashboard-header" style="align-items: flex-end; margin-bottom: 2rem;">
+            <div>
+                <h1 style="font-size: 1.75rem; font-weight: 400; color: #111;">Stories Hub Community</h1>
+                <p style="color: #565959; font-size: 0.875rem;">Discuss publishing, marketing, and formatting with
+                    fellow authors.</p>
+            </div>
+            <button class="btn btn-amazon" style="border-radius: 4px; padding: 0.6rem 2rem;">Start New Thread</button>
+        </div>
+
+        <div class="forum-container"
+            style="background: #fff; border: 1px solid #ddd; border-radius: 4px; overflow: hidden;">
+            <!-- Category Header -->
+            <div
+                style="background: #f0f2f2; padding: 0.75rem 1.5rem; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; font-size: 0.825rem; font-weight: 700;">
+                <span>Discussions</span>
+                <div style="display: flex; gap: 4rem;">
+                    <span style="width: 60px; text-align: center;">Replies</span>
+                    <span style="width: 60px; text-align: center;">Views</span>
+                    <span style="width: 150px; text-align: right;">Last Activity</span>
+                </div>
+            </div>
+
+            <!-- Thread 1 -->
+            <div class="forum-thread" onclick="window.location.href='forum-topic.html'"
+                style="padding: 1.25rem 1.5rem; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: background 0.1s;">
+                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div
+                        style="width: 40px; height: 40px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-weight: 700;">
+                        N</div>
+                    <div>
+                        <h4 style="font-size: 1rem; color: #007185; margin-bottom: 0.25rem;">Uploading Manuscript Issues
+                            - Word formatting lost?</h4>
+                        <p style="font-size: 0.75rem; color: #565959;">Started by <strong>NewAuthor_99</strong> in
+                            <strong>General Questions</strong>
+                        </p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 4rem; font-size: 0.875rem;">
+                    <span style="width: 60px; text-align: center;">12</span>
+                    <span style="width: 60px; text-align: center;">1.2k</span>
+                    <div style="width: 150px; text-align: right;">
+                        <div style="font-weight: 700;">2 hours ago</div>
+                        <div style="font-size: 0.75rem; color: #565959;">by Expert_Writer</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thread 2 -->
+            <div class="forum-thread"
+                style="padding: 1.25rem 1.5rem; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div
+                        style="width: 40px; height: 40px; background: #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #666; font-weight: 700;">
+                        D</div>
+                    <div>
+                        <h4 style="font-size: 1rem; color: #007185; margin-bottom: 0.25rem;">Cover Creator vs. Custom
+                            JPG? Best practices for 2026</h4>
+                        <p style="font-size: 0.75rem; color: #565959;">Started by <strong>DesignLover</strong> in
+                            <strong>Formatting & Content</strong>
+                        </p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 4rem; font-size: 0.875rem;">
+                    <span style="width: 60px; text-align: center;">45</span>
+                    <span style="width: 60px; text-align: center;">3.4k</span>
+                    <div style="width: 150px; text-align: right;">
+                        <div style="font-weight: 700;">Yesterday</div>
+                        <div style="font-size: 0.75rem; color: #565959;">by CoverArtPro</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 2rem; display: flex; justify-content: flex-end; gap: 0.5rem;">
+            <button class="btn btn-outline" style="border-radius: 4px; padding: 0.4rem 1rem;">‹ Previous</button>
+            <button class="btn btn-outline active"
+                style="border-radius: 4px; padding: 0.4rem 1rem; background: var(--primary-light); border-color: var(--primary-color);">1</button>
+            <button class="btn btn-outline" style="border-radius: 4px; padding: 0.4rem 1rem;">2</button>
+            <button class="btn btn-outline" style="border-radius: 4px; padding: 0.4rem 1rem;">3</button>
+            <button class="btn btn-outline" style="border-radius: 4px; padding: 0.4rem 1rem;">Next ›</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

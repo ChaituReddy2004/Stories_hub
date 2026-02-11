@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Title | Stories Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: var(--bg-secondary);">
+    <header>
+        <div class="logo"><img src="assets/images/logo_stories_hub.jpeg" alt="Stories Hub"></div>
+        <div class="header-user">
+            <span>Author Account: chaitanya_sh</span>
+        </div>
+    </header>
+
+    <nav class="sub-nav">
+        <a href="index.html">Bookshelf</a>
+        <a href="community-forum.html">Community</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="help-center.html">Help</a>
+        <a href="university.html">University</a>
+    </nav>
+
+    <div class="container" style="max-width: 1100px; margin: 3rem auto;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h1 style="font-size: 2rem; font-weight: 300; color: #111;">Create a New Title</h1>
+            <p style="color: #565959; margin-top: 0.5rem;">Select the format you would like to start creating.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+            <!-- eBook -->
+            <div class="card" onclick="window.location.href='ebook-details.html'"
+                style="padding: 2rem; cursor: pointer; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; border-top: 4px solid var(--primary-color);">
+                <div
+                    style="width: 80px; height: 110px; background: #e8f1f8; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--primary-color);">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem;">Kindle eBook</h3>
+                    <p style="font-size: 0.825rem; color: #565959; height: 60px;">Publish a digital book to the Kindle
+                        Store.</p>
+                </div>
+                <button class="btn btn-amazon" style="width: 100%; border-radius: 4px;">Create eBook</button>
+            </div>
+
+            <!-- Paperback -->
+            <div class="card"
+                style="padding: 2rem; opacity: 0.7; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; border-top: 4px solid var(--amazon-orange);">
+                <div
+                    style="width: 80px; height: 110px; background: #fffbe6; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--amazon-orange);">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem;">Paperback</h3>
+                    <p style="font-size: 0.825rem; color: #565959; height: 60px;">Publish a print-on-demand book with
+                        global distribution.</p>
+                </div>
+                <button class="btn btn-outline" style="width: 100%; border-radius: 4px; background: #fdfdfd;">Create
+                    Paperback</button>
+            </div>
+
+            <!-- Hardcover -->
+            <div class="card"
+                style="padding: 2rem; opacity: 0.7; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; border-top: 4px solid var(--success-color);">
+                <div
+                    style="width: 80px; height: 110px; background: #f6ffed; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--success-color);">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        <path d="M6.5 2L10 2L10 22L6.5 22"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem;">Hardcover</h3>
+                    <p style="font-size: 0.825rem; color: #565959; height: 60px;">Publish a premium hardcover book with
+                        a custom jacket.</p>
+                </div>
+                <button class="btn btn-outline" style="width: 100%; border-radius: 4px; background: #fdfdfd;">Create
+                    Hardcover</button>
+            </div>
+
+            <!-- Series -->
+            <div class="card"
+                style="padding: 2rem; opacity: 0.7; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; border-top: 4px solid #6c757d;">
+                <div
+                    style="width: 80px; height: 110px; background: #f0f2f2; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #666;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="8" rx="2"></rect>
+                        <rect x="2" y="14" width="20" height="8" rx="2"></rect>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem;">Series Page</h3>
+                    <p style="font-size: 0.825rem; color: #565959; height: 60px;">Group your related titles together on
+                        a single Amazon page.</p>
+                </div>
+                <button class="btn btn-outline" style="width: 100%; border-radius: 4px; background: #fdfdfd;">Create
+                    Series</button>
+            </div>
+        </div>
+
+        <div style="margin-top: 4rem; text-align: center;">
+            <a href="index.html" style="color: #007185; text-decoration: none; font-size: 0.875rem;">‹ Back to
+                Bookshelf</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

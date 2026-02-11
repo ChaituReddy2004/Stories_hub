@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindle eBook Content | Stories Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: var(--bg-secondary);">
+    <header>
+        <div class="logo"><img src="assets/images/logo_stories_hub.jpeg" alt="Stories Hub"></div>
+        <div class="header-user">
+            <span>Author Account: chaitanya_sh</span>
+        </div>
+    </header>
+
+    <nav class="sub-nav">
+        <a href="index.html">Bookshelf</a>
+        <a href="ebook-details.html">eBook Details</a>
+        <a href="ebookcontext.html" class="active">eBook Content</a>
+        <a href="ebook-pricing.html">eBook Pricing</a>
+        <a href="community-forum.html">Community</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="help-center.html">Help</a>
+        <a href="university.html">University</a>
+    </nav>
+
+
+    <div class="container" style="max-width: 980px; margin: 2rem auto;">
+        <div class="stepper" style="margin-bottom: 4rem;">
+            <div class="step completed" onclick="window.location.href='ebook-details.html'">
+                1
+                <span class="step-label">eBook Details</span>
+            </div>
+            <div class="step active">
+                2
+                <span class="step-label">eBook Content</span>
+            </div>
+            <div class="step" onclick="window.location.href='ebook-pricing.html'">
+                3
+                <span class="step-label">eBook Pricing</span>
+            </div>
+        </div>
+
+        <div class="card" style="padding: 2.5rem; border: 1px solid #ddd; box-shadow: 0 1px 1px rgba(0,0,0,0.05);">
+            <h1 style="font-size: 1.5rem; font-weight: 700; color: #111; margin-bottom: 0.5rem;">Kindle eBook Content
+            </h1>
+            <p class="info-text" style="font-size: 0.825rem; margin-bottom: 2.5rem;">Upload your manuscript and book
+                cover to continue. You can change these details anytime before publishing.</p>
+
+            <!-- Manuscript -->
+            <div class="form-group" style="border-bottom: 1px solid #eee; padding-bottom: 2.5rem;">
+                <h3 class="section-title">Manuscript</h3>
+                <p class="info-text" style="font-size: 0.825rem;">Upload your manuscript in Word (DOC/DOCX), EPUB, or
+                    KPF format. <a href="#" style="color: #007185; text-decoration: none;">Learn more</a></p>
+                <div class="upload-zone" id="manuscript-upload"
+                    style="border: 2px dashed #adb1b8; background: #f7fafa; border-radius: 4px; padding: 4rem;">
+                    <div class="upload-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <p style="margin-top: 1rem; color: #111; font-weight: 700;">Upload eBook manuscript</p>
+                    <p style="font-size: 0.75rem; color: #565959; margin-top: 0.5rem;">Supported formats: .doc, .docx,
+                        .epub, .kpf</p>
+                    <input type="file" id="manuscript-input" style="display: none;">
+                </div>
+            </div>
+
+            <!-- Cover -->
+            <div class="form-group" style="border-bottom: 1px solid #eee; padding-bottom: 2.5rem; margin-top: 2.5rem;">
+                <h3 class="section-title">Kindle eBook Cover</h3>
+                <p class="info-text" style="font-size: 0.825rem;">A professional cover can help your book stand out in
+                    search results. <a href="#" style="color: #007185; text-decoration: none;">View our cover
+                        guidelines</a></p>
+
+                <div class="cover-options" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div class="card" style="padding: 1.5rem; background: #fff; text-align: left;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 1rem;">Launch Cover Creator</h4>
+                        <p style="font-size: 0.75rem; color: #565959; margin-bottom: 1.5rem;">Use our design tool to
+                            build a cover from our gallery of templates.</p>
+                        <div class="preview-box"
+                            style="width: 100px; height: 160px; background: #eee; margin: 0 0 1.5rem 0;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1">
+                                <path d="M12 20h9"></path>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                            </svg>
+                        </div>
+                        <button class="btn btn-outline" style="width: 100%; border-radius: 4px;">Launch Cover
+                            Creator</button>
+                    </div>
+
+                    <div class="card" style="padding: 1.5rem; background: #fff; text-align: left;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 1rem;">Upload a cover you already have</h4>
+                        <p style="font-size: 0.75rem; color: #565959; margin-bottom: 1.5rem;">Upload your own image in
+                            JPG or TIFF format. <a href="#" style="color: #007185; text-decoration: none;">Format
+                                requirements</a></p>
+                        <div class="preview-box" id="cover-preview"
+                            style="width: 100px; height: 160px; background: #eee; margin: 0 0 1.5rem 0;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1">
+                                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <path d="M21 15L16 10L5 21"></path>
+                            </svg>
+                        </div>
+                        <button class="btn btn-primary" onclick="document.getElementById('cover-input').click()"
+                            style="width: 100%; border-radius: 4px; background: var(--primary-color);">Upload your cover
+                            file</button>
+                        <input type="file" id="cover-input" style="display: none;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Section -->
+            <div class="form-group" style="padding-bottom: 2.5rem; margin-top: 2.5rem;">
+                <h3 class="section-title">AI-Generated Content</h3>
+                <p class="info-text" style="font-size: 0.825rem;">Stories Hub Publishing requires you to inform us if
+                    your content is AI-generated. <a href="#" style="color: #007185; text-decoration: none;">What is
+                        AI-generated content?</a></p>
+                <div class="radio-group" style="gap: 0.75rem;">
+                    <label class="radio-item" style="padding: 1rem; border-radius: 4px;">
+                        <input type="radio" name="ai_usage" value="no" checked>
+                        <div style="margin-left: 1rem;">
+                            <strong style="font-size: 0.9rem;">No</strong>
+                            <p style="font-size: 0.75rem; color: #565959; margin-top: 0.25rem;">I did not use AI tools
+                                to generate text, images, or translations.</p>
+                        </div>
+                    </label>
+                    <label class="radio-item" style="padding: 1rem; border-radius: 4px;">
+                        <input type="radio" name="ai_usage" value="yes">
+                        <div style="margin-left: 1rem;">
+                            <strong style="font-size: 0.9rem;">Yes</strong>
+                            <p style="font-size: 0.75rem; color: #565959; margin-top: 0.25rem;">I used AI tools to
+                                generate sections of text, images, or translations.</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="footer-actions" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #eee;">
+                <button class="btn btn-outline" onclick="window.location.href='ebook-details.html'"
+                    style="border-radius: 4px; padding: 0.6rem 2rem;">Back to Details</button>
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn btn-outline" style="border-radius: 4px; padding: 0.6rem 2rem;">Save as
+                        Draft</button>
+                    <button class="btn btn-amazon" onclick="window.location.href='ebook-pricing.html'"
+                        style="border-radius: 4px; padding: 0.6rem 3rem; font-weight: 700;">Save and Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf | Stories Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bookshelf-page" style="background-color: var(--bg-secondary);">
+    <header>
+        <div class="logo"><img src="assets/images/logo_stories_hub.jpeg" alt="Stories Hub"></div>
+        <div class="header-user">
+            <a href="#" style="color: white; text-decoration: none;">Help</a>
+            <a href="#" style="color: white; text-decoration: none;">English</a>
+            <span>Author: chaitanya_sh</span>
+            <a href="#" style="color: white; text-decoration: none; font-weight: 700;">Sign Out</a>
+        </div>
+    </header>
+
+    <nav class="sub-nav">
+        <a href="index.html" class="active">Bookshelf</a>
+        <a href="community-forum.html">Community</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="help-center.html">Help</a>
+        <a href="university.html">University</a>
+    </nav>
+
+
+    <div class="container" style="max-width: 1280px; margin: 2rem auto;">
+        <div class="dashboard-header">
+            <h1 style="font-size: 1.75rem; font-weight: 400; color: #111;">Your Bookshelf</h1>
+            <div class="search-bar" style="width: 400px;">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Search by title, author, or ISBN"
+                    style="border-radius: 4px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+
+        <div class="card" style="padding: 2rem; border-top: 4px solid var(--primary-color);">
+            <h3 style="margin-bottom: 1.5rem; font-weight: 700;">Create a New Title</h3>
+            <div style="display: flex; gap: 1rem;">
+                <button class="btn btn-amazon" onclick="window.location.href='create-selection.html'"
+                    style="padding: 0.6rem 2rem; border-radius: 4px;">+ Kindle eBook</button>
+                <button class="btn btn-outline" style="padding: 0.6rem 2rem; border-radius: 4px; background: #f7fafa;">+
+                    Paperback</button>
+                <button class="btn btn-outline" style="padding: 0.6rem 2rem; border-radius: 4px; background: #f7fafa;">+
+                    Hardcover</button>
+                <button class="btn btn-outline" style="padding: 0.6rem 2rem; border-radius: 4px; background: #f7fafa;">+
+                    Series Page</button>
+            </div>
+        </div>
+
+        <div class="tabs" style="margin-top: 2rem; border-bottom: 1px solid var(--border-color); gap: 1rem;">
+            <div class="tab active" style="border-bottom: 3px solid var(--primary-color); padding-bottom: 0.5rem;">All
+                Titles (2)</div>
+            <div class="tab" style="padding-bottom: 0.5rem; border-bottom: 3px solid transparent;">Published (1)</div>
+            <div class="tab" style="padding-bottom: 0.5rem; border-bottom: 3px solid transparent;">Drafts (1)</div>
+        </div>
+
+        <div class="book-list" style="margin-top: 1.5rem;">
+            <!-- Book 1 -->
+            <div class="card" style="padding: 0; overflow: hidden;">
+                <div class="book-card"
+                    style="grid-template-columns: 100px 1fr 300px; padding: 1.5rem; background: #fff;">
+                    <div class="book-cover-mini" style="width: 100px; height: 150px; border: 1px solid #ddd;">
+                        <div
+                            style="background: #f7fafa; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #ccc;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <div style="font-size: 0.75rem; color: #565959; margin-bottom: 0.25rem;">Kindle eBook | ASIN:
+                            B0DHX7W8Y9</div>
+                        <h3
+                            style="font-size: 1.125rem; font-weight: 700; color: #007185; margin-bottom: 0.5rem; cursor: pointer;">
+                            The Midnight Chronicles: Echoes of Eternity</h3>
+                        <div class="book-meta">By Chaitanya S.</div>
+                        <div class="book-meta" style="margin-top: 0.25rem;">Last Modified: Feb 10, 2026</div>
+                        <div class="status-badge status-live" style="margin-top: 1rem;">Live</div>
+                    </div>
+                    <div class="book-actions"
+                        style="background: #fdfdfd; padding: 1rem; border-left: 1px solid var(--border-color);">
+                        <button class="btn btn-amazon"
+                            style="width: 100%; margin-bottom: 1rem; border-radius: 4px;">Promote and Advertise</button>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.825rem;">
+                            <a href="ebook-details.html" style="color: #007185; text-decoration: none;">Edit eBook
+                                details ›</a>
+                            <a href="ebookcontext.html" style="color: #007185; text-decoration: none;">Edit eBook
+                                content ›</a>
+                            <a href="ebook-pricing.html" style="color: #007185; text-decoration: none;">Edit eBook
+                                pricing ›</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="card" style="padding: 0; overflow: hidden;">
+                <div class="book-card"
+                    style="grid-template-columns: 100px 1fr 300px; padding: 1.5rem; background: #fff;">
+                    <div class="book-cover-mini" style="width: 100px; height: 150px; border: 1px solid #ddd;">
+                        <div
+                            style="background: #f7fafa; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #ccc;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <div style="font-size: 0.75rem; color: #565959; margin-bottom: 0.25rem;">Kindle eBook | Draft
+                        </div>
+                        <h3
+                            style="font-size: 1.125rem; font-weight: 700; color: #007185; margin-bottom: 0.5rem; cursor: pointer;">
+                            Beyond the Horizon: A Guide to Modern AI</h3>
+                        <div class="book-meta">By Chaitanya S.</div>
+                        <div class="book-meta" style="margin-top: 0.25rem;">Last Modified: Feb 11, 2026</div>
+                        <div class="status-badge status-draft" style="margin-top: 1rem;">Draft</div>
+                    </div>
+                    <div class="book-actions"
+                        style="background: #fdfdfd; padding: 1rem; border-left: 1px solid var(--border-color);">
+                        <button class="btn btn-amazon" onclick="window.location.href='ebookcontext.html'"
+                            style="width: 100%; margin-bottom: 1rem; border-radius: 4px;">Continue Setup</button>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.825rem;">
+                            <a href="ebook-details.html" style="color: #007185; text-decoration: none;">Edit eBook
+                                details ›</a>
+                            <a href="ebookcontext.html" style="color: #007185; text-decoration: none;">Edit eBook
+                                content ›</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

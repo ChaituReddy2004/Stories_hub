@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindle eBook Details | Stories Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: var(--bg-secondary);">
+    <header>
+        <div class="logo"><img src="assets/images/logo_stories_hub.jpeg" alt="Stories Hub"></div>
+        <div class="header-user">
+            <span>Author Account: chaitanya_sh</span>
+        </div>
+    </header>
+
+    <nav class="sub-nav">
+        <a href="index.html">Bookshelf</a>
+        <a href="ebook-details.html" class="active">eBook Details</a>
+        <a href="ebookcontext.html">eBook Content</a>
+        <a href="ebook-pricing.html">eBook Pricing</a>
+        <a href="community-forum.html">Community</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="help-center.html">Help</a>
+        <a href="university.html">University</a>
+    </nav>
+
+
+    <div class="container" style="max-width: 980px; margin: 2rem auto;">
+        <div class="stepper" style="margin-bottom: 4rem;">
+            <div class="step active">
+                1
+                <span class="step-label">eBook Details</span>
+            </div>
+            <div class="step" onclick="window.location.href='ebookcontext.html'">
+                2
+                <span class="step-label">eBook Content</span>
+            </div>
+            <div class="step" onclick="window.location.href='ebook-pricing.html'">
+                3
+                <span class="step-label">eBook Pricing</span>
+            </div>
+        </div>
+
+        <div class="card" style="padding: 2.5rem; border: 1px solid #ddd; box-shadow: 0 1px 1px rgba(0,0,0,0.05);">
+            <h1 style="font-size: 1.5rem; font-weight: 700; color: #111; margin-bottom: 0.5rem;">Kindle eBook Details
+            </h1>
+            <p class="info-text" style="font-size: 0.825rem; margin-bottom: 2.5rem;">Enter your book's primary details.
+                This information will appear on the Amazon detail page.</p>
+
+            <!-- Language -->
+            <div class="form-group" style="border-bottom: 1px solid #eee; padding-bottom: 2.5rem;">
+                <label class="section-title" style="display: block; margin-bottom: 0.5rem;">Language</label>
+                <select
+                    style="width: 300px; padding: 0.6rem; border: 1px solid #adb1b8; border-radius: 3px; background: #f0f2f2;">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                </select>
+            </div>
+
+            <!-- Book Title -->
+            <div class="form-group" style="border-bottom: 1px solid #eee; padding-bottom: 2.5rem; margin-top: 2.5rem;">
+                <label class="section-title" style="display: block; margin-bottom: 0.25rem;">Book Title</label>
+                <p class="info-text" style="font-size: 0.75rem; color: #565959; margin-bottom: 1rem;">Enter your title
+                    as it appears on the book cover. <a href="#"
+                        style="color: #007185; text-decoration: none;">Guidelines</a></p>
+                <input type="text" placeholder="Title"
+                    style="width: 100%; padding: 0.6rem; border: 1px solid #adb1b8; border-radius: 3px; margin-bottom: 1rem;">
+                <input type="text" placeholder="Subtitle (Optional)"
+                    style="width: 100%; padding: 0.6rem; border: 1px solid #adb1b8; border-radius: 3px;">
+            </div>
+
+            <!-- Author -->
+            <div class="form-group" style="border-bottom: 1px solid #eee; padding-bottom: 2.5rem; margin-top: 2.5rem;">
+                <label class="section-title" style="display: block; margin-bottom: 0.25rem;">Primary Author or
+                    Contributor</label>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <input type="text" placeholder="First Name"
+                        style="flex: 1; padding: 0.6rem; border: 1px solid #adb1b8; border-radius: 3px;">
+                    <input type="text" placeholder="Last Name"
+                        style="flex: 1; padding: 0.6rem; border: 1px solid #adb1b8; border-radius: 3px;">
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="form-group" style="border-bottom: 1px solid #eee; padding-bottom: 2.5rem; margin-top: 2.5rem;">
+                <label class="section-title" style="display: block; margin-bottom: 0.25rem;">Description</label>
+                <p class="info-text" style="font-size: 0.75rem; color: #565959; margin-bottom: 1rem;">Write a summary of
+                    your book. This will be the main text on your book's detail page. <a href="#"
+                        style="color: #007185; text-decoration: none;">Formatting tips</a></p>
+                <textarea
+                    style="width: 100%; height: 200px; padding: 1rem; border: 1px solid #adb1b8; border-radius: 3px; font-family: inherit; font-size: 0.9rem;"></textarea>
+            </div>
+
+            <!-- Publishing Rights -->
+            <div class="form-group" style="margin-top: 2.5rem;">
+                <label class="section-title" style="display: block; margin-bottom: 0.25rem;">Publishing Rights</label>
+                <div class="radio-group" style="gap: 1rem; margin-top: 1rem;">
+                    <label style="display: flex; align-items: flex-start; gap: 1rem; cursor: pointer;">
+                        <input type="radio" name="rights" value="own" checked style="margin-top: 4px;">
+                        <div>
+                            <strong style="font-size: 0.9rem;">I own the copyright and I hold the necessary publishing
+                                rights.</strong>
+                        </div>
+                    </label>
+                    <label style="display: flex; align-items: flex-start; gap: 1rem; cursor: pointer;">
+                        <input type="radio" name="rights" value="public" style="margin-top: 4px;">
+                        <div>
+                            <strong style="font-size: 0.9rem;">This is a public domain work.</strong>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="footer-actions" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #eee;">
+                <div></div>
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn btn-outline" style="border-radius: 4px; padding: 0.6rem 2rem;">Save as
+                        Draft</button>
+                    <button class="btn btn-amazon" onclick="window.location.href='ebookcontext.html'"
+                        style="border-radius: 4px; padding: 0.6rem 3rem; font-weight: 700;">Save and Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
